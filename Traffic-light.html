@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <html lang="en">
  <head>
   <style>
@@ -7,14 +7,19 @@
       background-color: rgb(33, 190, 221);
       align-items: center;
      } 
+
      .Traffic-light {
         background-color: #000;
         width: 100px;
         height: 300px;
         border-radius: 20px;
         align-content: center;
-        
-
+     }
+     .layout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
      }
      .traffic-light-red {
         background-color: red;
@@ -61,18 +66,21 @@
   <title>Traffic Light</title>
  </head>
  <body>
+    <div class="layout">
   <div class="Traffic-light">
-    <div class="traffic-light-red"></div>
-    <div class="traffic-light-yellow"></div>
-    <div class="traffic-light-green"></div>
+    <div class="traffic-light-red" id="traffic-light-red"></div>
+    <div class="traffic-light-yellow" id="traffic-light-yellow"></div>
+    <div class="traffic-light-green" id="traffic-light-green"></div>
 
   <br>
      
     <div class="traffic-light-pole">
-    <div class="traffic-light-pole-bottom"></div>
+    <div class="traffic-light-pole-bottom" id="traffic-light-pole-bottom"></div>
 
   </div>
- 
+  </div>
   </div>
  </body>
  </html>
+
+ 
